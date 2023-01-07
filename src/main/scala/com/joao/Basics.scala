@@ -1,26 +1,27 @@
 package com.joao
 
-object Basics {
+object Basics extends App {
   // defining a value
-  val meaningOfLife: Int = 42 // const int meaningOfLife = 42;
+  val myAge: Int = 19 // const int meaningOfLife = 42;
 
   // Int, Boolean, Char, Double, Float, String
   val aBoolean = false // type is optional
 
   // strings and string operations
-  val aString = "I love Scala"
-  val aComposedString = "I" + " " + "love" + " " + "Scala"
-  val anInterpolatedString = s"The meaning of life is $meaningOfLife"
+  val aString = "Hello World"
+  val aComposedString = "Hello" + " " + "World"
+  val anInterpolatedString = s"I have $myAge years old"
 
   // expressions = structures that can be reduced to a value
   val anExpression = 2 + 3
 
   // if-expression
-  val ifExpression = if (meaningOfLife > 43) 56 else 999 // in other languages: meaningOfLife > 43 ? 56 : 999
+  val ifExpression = if (myAge > 43) 56 else 999 // in other languages: myAge > 43 ? 56 : 999
+  println(ifExpression) // 999
   val chainedIfExpression =
-    if (meaningOfLife > 43) 56
-    else if (meaningOfLife < 0) -2
-    else if (meaningOfLife > 999) 78
+    if (myAge > 43) 56
+    else if (myAge < 0) -2
+    else if (myAge > 999) 78
     else 0
 
   // code blocks
@@ -54,10 +55,10 @@ object Basics {
 
   // the Unit type = no meaningful value === "void" in other languages
   // type of SIDE EFFECTS
-  println("I love Scala") // System.out.println, printf, print, console.log
+  println("I'm learning Scala") // System.out.println, printf, print, console.log
 
   def myUnitReturningFunction(): Unit = {
-    println("I don't love returning Unit")
+    println("I'm returning Unit")
   }
 
 
