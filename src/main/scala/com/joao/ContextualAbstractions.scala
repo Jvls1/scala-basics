@@ -2,7 +2,7 @@ package com.joao
 
 object ContextualAbstractions {
 
-   TODO update to Scala 3
+//   TODO update to Scala 3
 
   //  /*
   //    1 - context parameters/arguments
